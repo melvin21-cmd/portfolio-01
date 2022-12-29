@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a834b3b93.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="home">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="home-text">
+                <h1>Need a new junior web developer to be part <br>of your Company Success<br>
+                    <!-- Then You are in the right Place --></h1>
+                <p>Fresh IT Graduate from Sorsogon State University – Bulan Campus</p>
+            </div>
+        </div>
+    </div>
+    <!---------------About------------>
+    <div id="about">
+        <div class="container2">
+            <div class="row">
+                <div class="about-row1">
+                <img src="images/id.png" class="user">
+                </div>
+                <div class="about-row2">
+                    <h1 class="title">About Me</h1>
+                    <h3>Hello, I’m Melvin De Los Santos</h3>
+                    <p>21 yrs old, I am a Fresh IT Graduate from Sorsogon State<br> 
+                        University - Bulan Campus, seeking a job as a web developer<br>
+                        and my only experience is when I went on OJT (On the Job Training)<br>
+                        of my school. It will be a first great experience for me to work in your<br> 
+                        company.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------Resume----------------------------------- -->
+    <div id="resume">
+        <h1 class="title">Resume</h1>
+        <div class="tabs">
+            <p class="tab-link active" onclick="opentab('education')">Education</p>
+            <p class="tab-link" onclick="opentab('experience')">Experience</p>
+            <p class="tab-link" onclick="opentab('skill')">Skill</p>
+        </div>
+        <div class="tab-contents active-tab" id="education">
+            <ul>
+                <li><span>2020 – 2023</span><br>Bachelor of Science in Information Technology<br>
+                    <span>Sorsogon State University – Bulan Campus</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2022 – 2023</span><br>On the Job Training (OJT)<br>
+                    <span>Masters Web Developer</span>
+                </li>
+                <li><span>2021 – 2023</span><br>School Projects/Activities<br>
+                    <span>Sorsogon State University - Bulan Campus</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="skill">
+            <ul>
+                <li><h4>Java</h4><h5>45%</h5>
+                    <span class="bar"><span class="java"></span></span>
+                </li>
+                <li><h4>HTML5</h4><h5>70%</h5>
+                    <span class="bar"><span class="html"></span></span>
+                </li>
+                <li><h4>CSS</h4><h5>55%</h5>
+                    <span class="bar"><span class="css"></span></span>
+                </li>
+                <li><h4>JavaScript</h4><h5>35%</h5>
+                    <span class="bar"><span class="javascript"></span></span>
+                </li>
+                <li><h4>Node.js</h4><h5>25%</h5>
+                    <span class="bar"><span class="node"></span></span>
+                </li>
+            </ul>
+        </div>
+        <a href="images/CV.pdf" download class="btn3 btn2">Download CV</a>
+    </div>
+
+    <!-- -------------------------------Portfolio------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Chat App</h3>
+                        <a href="https://github.com/melvin21-cmd/Chat-Apps"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather2xlang.jpg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <a href="https://melvin21-cmd.github.io/Weather-App/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Note-taking App</h3>
+                        <a href="https://github.com/melvin21-cmd/Note-app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------Contact------------------ -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="title">Contact</h1>
+            <div class="get-in-touch">
+                <h2 class="under">Get in touch</h2>
+                <p>For inquiries feel free to contact me by call or email</p>
+            </div>    
+                <div class="contact-info">
+                    <div class="info">
+                        <p class="icon"><i class="fa-solid fa-phone-volume"></i></p>
+                        <h3>Call me</h3>
+                        <p>(+63)967 351 6729</p>
+                    </div>
+                    <div class="info">
+                        <p class="icon"><a href="mailto:vindelossantos99@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+                        <h3>Email</h3>
+                        <p>vindelossantos99@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <p class="icon"><i class="fa-solid fa-location-dot"></i></p>
+                        <h3>Location</h3>
+                        <p>Magallanes, Sorsogon, Philippines</p>
+                    </div>
+                </div>
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <div class="fullname">
+                    <p>Name</p>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    </div>
+                    <div class="email-add">
+                    <p>Email</p>
+                    <input type="email" name="Email" placeholder="Your Email" required">
+                    </div>
+                    <div class="cell-no">
+                    <p>Phone</p>
+                    <input type="tel" name="Phone" placeholder="0123-456-7890" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="mensahe">
+                    <p>Meassage</p>
+                    <textarea name="Message"  rows="10" placeholder="Your Message" required autocomplete="off"></textarea>
+                    </div>
+                    <button type="submit" class="btn1 btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="left">
+                <p>© 2022 Melvin's Site.</p>
+            </div>
+            <div class="right">
+                <p><a href="https://web.facebook.com/profile.php?id=100075692370412"><i class="fa-brands fa-facebook"></i></a>Facebook</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link")
+        var tabContents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active");
+            } 
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active"); //link color under the skill, educ, and exper
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var Sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            Sidemenu.style.right = "0";
+        } 
+
+        function closemenu(){
+            Sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxyDqCLT1wchR78D8tqT-MSMZcREEB_h9KEM67Q64dd3carOfQC8fCk6JlaT4DGFcI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
